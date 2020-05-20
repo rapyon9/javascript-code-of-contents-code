@@ -1,0 +1,31 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title></title>
+</head>
+
+<body>
+  <ul>
+  <script>
+    var index_list = ['일리네어 레코즈', 'Just Music', 'AOMG', 'Comment & Question'];
+    var index_detail = ['개요', '멤버', '대표곡'];
+    var i=0;
+
+    while(i<index_list.length-1){
+      document.write('<li>'+index_list[i]+'</li>');
+
+        for(var x=0; x<index_detail.length; x++){
+          document.write('<ol>'+(x+1)+'. '+index_detail[x]+'</ol>');
+
+        }
+      i=i+1;
+
+      }
+    document.write('<li>'+index_list[index_list.length-1]+'</li>');
+
+  </script>
+  </ul>
+
+</body>
+</html>
